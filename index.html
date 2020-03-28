@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <meta name="description" content="">
+	  <meta name="author" content="">
+
+	  <title>Page for the analysis of sentiment and irony</title>
+
+	  <!-- Bootstrap core CSS -->
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+	  <!-- Custom fonts for this template -->
+
+	  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+	  <!-- Custom styles for this template -->
+	  <link href="css/model_site_style.css" rel="stylesheet">
+
+	  <link rel="shortcut icon" href="./img/brain.png">
+	</head>
+
+	<body>
+
+
+		<!-- Full Page Image Header with Vertically Centered Content -->
+		<header class="main_content">
+			<div class="container h-100 text-center text-white">
+			  <div class="row h-100 align-items-center">
+				<div class="col-12 less-margin">
+				  <h1 class="mb-5 shadow_text">Enter the text you want to analyze</h1><br><br>
+				</div>
+				<div class="col-12 justify-content-center transparent_div">
+					<div class="form-row">
+					  <div class="col-9">
+						<textarea  id="input_string" maxlength="500" rows="3" type="text" name="text" class="form-control form-control-lg" placeholder="Enter your text(max 500 characters)..."></textarea>
+						<div id="success_alert" style="width:60%; display: None;margin:0 auto;margin-top: 3em;" class="alert alert-success" role="alert" ></div>
+					    <div id="error_alert" style="width:60%; display: None;margin:0 auto;margin-top: 3em;" class="alert alert-danger" role="alert" >An error is occurred!</div>
+					  </div>
+					  <div class="col-3">
+						<!--<button id="sendButton" type="button" class="btn btn-block btn-lg btn-primary">Insert</button>-->
+						<button id="polarity" value="polarity" type="button" style="height:50px;width:200px;margin:5px;" class="btn btn-primary">Evaluete polarity</button>
+						<button id="irony" value="irony" type="button" style="height:50px;width:200px;margin:5px;" class="btn btn-primary">Evaluete irony</button>
+						<button id="sarcasm" value="sarcasm" type="button" style="height:50px;width:200px;margin:5px;" class="btn btn-primary">Evaluete sarcasm</button>
+						<button id="subjectivity" value="subjectivity" type="button" style="height:50px;width:200px;margin:5px;" class="btn btn-primary">Evaluete subjectivity</button>
+						<button id="alldimensions" value="alldimensions" type="button" style="height:50px;width:200px;margin:5px;" class="btn btn-primary">Evaluete all dimensions</button>
+					  </div>
+					  
+					</div>
+					<!--
+					<input id="polarity" type="radio" name="cc" value="polarity"  > Polarity
+					<input id="irony" type="radio" name="cc" value="irony" checked="checked" >Irony
+					<input id="sarcasm" type="radio" name="cc" value="sarcasm" > Sarcasm
+					-->
+					
+				</div>
+			  </div>
+			</div>
+		</header>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  		<script src="./script/sitefunctions.js"></script>
+	</body>
+</html>
